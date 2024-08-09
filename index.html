@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CE and MCA Rating Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo">
+        <h1>CE and MCA Rating Calculator</h1>
+
+        <form method="POST">
+            <div class="form-group">
+                <label for="audit_name">Audit Name:</label>
+                <input type="text" id="audit_name" name="audit_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="auditor_name">Auditor Name:</label>
+                <input type="text" id="auditor_name" name="auditor_name" required>
+            </div>
+
+            <!-- Add other form fields for CE and MCA ratings here -->
+
+            <button type="submit">Calculate & Save</button>
+        </form>
+    </div>
+</body>
+</html>
